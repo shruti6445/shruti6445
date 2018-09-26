@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="56dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:background="#edfafaf9">
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:textSize="50dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#30b7b5"
+                android:text="Login"
+                android:typeface="sans"
+                android:layout_weight="0.26"
+                android:id="@+id/textView" />
+
+
+
+
+            <!-- Email Label -->
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+                <EditText android:id="@+id/input_id"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="User ID"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#0b0b0b"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+
+                    />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+
+
+                <EditText android:id="@+id/input_pass"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textSize="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Password"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+
+                <at.markushi.ui.CircleButton
+                    android:id="@+id/btnlogin"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right"
+                    app:cb_color="#4ddad8"
+                    app:cb_pressedRingWidth="8dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/nextbtn"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/btnlogin"
+                    android:layout_alignStart="@+id/btnlogin" />
+            </RelativeLayout>
+
+
+
+
+            <TextView android:id="@+id/forgetpass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Forget Password?"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+
+            <TextView android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:text="Not account yet? Create one"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="17dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
